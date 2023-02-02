@@ -23,8 +23,10 @@ const EditUser = () => {
     await axios.put(`http://localhost:3001/users/${id}`, user);
     navigate("/");
   };
+
   useEffect(() => {
     loadUser();
+   // eslint-disable-next-line
   }, []);
 
   const loadUser = async () => {
