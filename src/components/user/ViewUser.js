@@ -25,7 +25,7 @@ const ViewUser = () => {
 
   return (
     <div className="container py-4">
-      <Link className="btn btn-primary" to="/">
+      <Link className="btn btn-info" to="/">
         Bake to home
       </Link>
       <h1 className="display-4">view user : {id}</h1>

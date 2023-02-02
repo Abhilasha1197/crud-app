@@ -33,6 +33,7 @@ const EditUser = () => {
     const result = await axios.get(`http://localhost:3001/users/${id}`);
     setUser(result.data);
   };
+
   return (
     <div className="container">
       <div className="py-4">
@@ -114,7 +115,7 @@ const EditUser = () => {
             />
           </div>
 
-          <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-info">
             Update
           </button>
         </form>
